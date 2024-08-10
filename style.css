@@ -1,0 +1,157 @@
+body, ul, li{
+
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Arial;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área */
+}
+
+/*Inicio Barra de Navegação*/
+.header{
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.menu li {
+    margin-left: 10px;
+    
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    background: tomato;
+}
+
+/*Fim Barra de Navegação*/
+
+
+/* Inicio Página 1 */
+
+.pg-1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Define a altura do contêiner para 100% da altura da viewport */
+    overflow: hidden;
+}
+
+
+
+
+
+.text{
+    position: absolute;
+    padding: 0px 20px; /*Espaço de 0px em baixo e em cima e um espaço de 20px a esquerda e a direita */
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    z-index: 2; /* Garante que o texto esteja acima da sobreposição */
+    
+}
+
+.cidade {
+    position: relative;
+    font-size: 75px;
+    padding: 10px 30px;
+    border-radius: 1em;
+    background: #151920;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.fala-1{
+    font-size: 35px;
+    padding: 0px 150px;
+}
+
+
+
+.fala-2{
+    font-size: 20px;
+    padding: 0 5%; /* Espaçamento lateral em porcentagem, torna-se responsivo */
+    max-width: 90%; /* Limita a largura do texto a 90% do container */
+    box-sizing: border-box; /* Garante que o padding seja incluído no cálculo da largura total */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding-bottom: 200px;
+}
+
+.img-pg-1{
+    width: 100%; /* Faz a imagem preencher a largura do contêiner */
+    height: 100%; /* Mantém a proporção da imagem */
+    object-fit: cover;
+    display: block; /* Remove espaços abaixo da imagem */
+    top: 0;
+    left: 0;
+
+}
+
+.img-pg-1::after {
+    content: ""; /* Cria um pseudo-elemento vazio */
+    position: absolute; /* Permite que o pseudo-elemento seja posicionado sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Preto com 30% de opacidade */
+    z-index: 1; /* Garante que o overlay esteja abaixo do texto */
+}
+
+@media (max-width: 768px) {
+
+    .cidade {
+        font-size: 40px; /* Diminui o tamanho da fonte em telas menores */
+        padding: 2% 5%; /* Ajusta o padding em telas menores */
+    }
+
+    .fala-1 {
+        font-size: 25px; /* Diminui o tamanho da fonte em telas menores */
+        padding: 0 10%; /* Ajusta o padding em telas menores */
+    }
+
+    .fala-2 {
+        font-size: 18px; /* Diminui o tamanho da fonte em telas menores */
+        padding: 0 10%; /* Ajusta o padding em telas menores */
+    }
+}
+
+/* Fim Página 1 */
+
+/* Inicio Página 2 */
+
+.pg-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.rogga{
+    display: flex;
+    flex-direction: row;
+}
+/* Fim Página 2 */

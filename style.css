@@ -19,7 +19,7 @@ img{
     object-fit: cover; /* Garante que a imagem cubra toda a área */
 }
 
-/*Inicio Barra de Navegação*/
+/*inicio barra de navegação*/
 .header{
     background: #1d1e20;
     display: flex;
@@ -45,10 +45,10 @@ img{
     background: tomato;
 }
 
-/*Fim Barra de Navegação*/
+/*fim barra de navegação*/
 
 
-/* Inicio Página 1 */
+/*inicio pagina 1 */
 
 .pg-1{
     position: relative;
@@ -141,17 +141,90 @@ img{
     }
 }
 
-/* Fim Página 1 */
+/*fim pagina 1 */
 
-/* Inicio Página 2 */
+
+
+/*inicio pagina 2 */
 
 .pg-2{
     display: flex;
     flex-direction: column;
+    gap: 20px; /* Espaçamento entre os blocos */
+    background:#eee0b8ec ;/*outra forma #F8F8FF*/
+    padding: 0px 50px;
 }
 
-.rogga{
+.container-imobiliaria{
+    display: flex;
+    align-items: center;/* Alinha verticalmente os itens ao centro */
+    gap: 20px;
+}
+
+.container-imobiliaria .content{
+    flex: 1; /* Ocupa o espaço restante ao lado da imagem */
+}
+
+.img-pg2{
+    width: auto;
+    height: auto;
+
+}
+
+.titulo{
+    font-size: 2.5em;
+
+}
+
+.linha{
+    border-bottom: 3px solid #696969;/* Linha preta */
+    padding-bottom: 5px;/* Espaçamento entre o texto e a linha */
+
+}
+
+
+
+/*fim pagina 2 */
+
+
+
+/*inicio pagina 3*/
+
+.pg-3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 50px;
+    background: #e4e2d7;
+}
+
+.texto-curiosidades{
+    font-size: 20px;
+    max-width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.titulo-curiosidade{
+    text-decoration: underline;
+}
+    
+.img-pg3{
     display: flex;
     flex-direction: row;
+    max-width: 400px;
+    padding: 50px 50px;
+   
+
 }
-/* Fim Página 2 */
+
+
+.img-curiosidade{
+    padding: 0px 10px;
+    max-height: 400px;
+    
+}
+
+/*fim pagina 3*/

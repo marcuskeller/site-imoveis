@@ -85,21 +85,20 @@ img{
     
 }
 
-.fala-1{
+.fala-pg1{
     font-size: 35px;
-    padding: 0px 150px;
+    padding: 0px 10%;
 }
 
 
 
-.fala-2{
+.fala-pg2{
     font-size: 20px;
     padding: 0 5%; /* Espaçamento lateral em porcentagem, torna-se responsivo */
     max-width: 90%; /* Limita a largura do texto a 90% do container */
     box-sizing: border-box; /* Garante que o padding seja incluído no cálculo da largura total */
     margin: 0 auto; /* Centraliza o texto horizontalmente */
     text-align: center; /* Centraliza o texto */
-    padding-bottom: 200px;
 }
 
 .img-pg-1{
@@ -124,20 +123,42 @@ img{
 }
 
 @media (max-width: 768px) {
-
+    .text{
+        position: absolute;
+        padding: 0px 10px; /*Espaço de 0px em baixo e em cima e um espaço de 20px a esquerda e a direita */
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        z-index: 2; /* Garante que o texto esteja acima da sobreposição */
+        
+    }
+    
     .cidade {
-        font-size: 40px; /* Diminui o tamanho da fonte em telas menores */
-        padding: 2% 5%; /* Ajusta o padding em telas menores */
+        position: relative;
+        font-size: 40px;
+        padding: 10px 30px;
+        border-radius: 1em;
+        background: #151920;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        
     }
-
-    .fala-1 {
-        font-size: 25px; /* Diminui o tamanho da fonte em telas menores */
-        padding: 0 10%; /* Ajusta o padding em telas menores */
+    
+    .fala-pg1{
+        font-size: 25px;
+        padding: 0px 5%;
     }
-
-    .fala-2 {
-        font-size: 18px; /* Diminui o tamanho da fonte em telas menores */
-        padding: 0 10%; /* Ajusta o padding em telas menores */
+    
+    
+    
+    .fala-pg2{
+        font-size: 18px;
+        padding: 0px 5%; /* Espaçamento lateral em porcentagem, torna-se responsivo */
+        max-width: 100%; /* Limita a largura do texto a 90% do container */
+        box-sizing: border-box; /* Garante que o padding seja incluído no cálculo da largura total */
+        margin: 0 auto; /* Centraliza o texto horizontalmente */
+        text-align: center; /* Centraliza o texto */
     }
 }
 
@@ -192,8 +213,9 @@ img{
 
 .pg-3{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
     padding: 20px 50px;
     background: #e4e2d7;
 }
@@ -207,24 +229,143 @@ img{
 
 }
 
-.titulo-curiosidade{
-    text-decoration: underline;
-}
+
     
 .img-pg3{
     display: flex;
     flex-direction: row;
-    max-width: 400px;
-    padding: 50px 50px;
-   
+    gap: 20px;
+    max-width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+
 
 }
 
-
 .img-curiosidade{
-    padding: 0px 10px;
-    max-height: 400px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width: 768px){
+
     
+    .texto-curiosidades{
+        font-size: 20px;
+        max-width: 90%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        text-align: center;
+    
+    }
+
+    .titulo-curiosidade{
+        font-size: 30px;
+    }
+
+
+    .img-pg3{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .img-curiosidade{
+        padding: 10px 0px;
+        max-height: 400px;
+        
+    }
+
 }
 
 /*fim pagina 3*/
+
+
+
+/*inicio pagina 4 */
+
+.pg-4{
+    background:#e4e2d7 ;
+}
+
+.titulo-quem-somos{
+    font-size: 50px;
+    display: flex;
+    margin-top: 0 ;
+    padding-top: 40px;
+    padding-left: 30px;
+    justify-content: start;
+}
+
+.fala-pg4{
+    font-size: 25px;
+    padding-top: 20%;
+    padding: 50px 5%;
+    margin: 0;
+    color: #696969;
+}
+
+.img-pg4{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 400px;
+    box-sizing: border-box; 
+    
+}
+
+.img-especifica-pg4{
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    max-height: 100%;
+    box-sizing: border-box;
+    
+}
+
+
+
+@media(max-width: 768px){
+    .pg-4{
+        font-size: 20px;
+        max-width: 1000%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        text-align: center;
+        background:#e4e2d7 ;
+        
+    }
+    
+    .titulo-quem-somos{
+        font-size: 30px;
+        display: flex;
+        margin-top: 0 ;
+        padding-top: 40px;
+        padding-left: 30px;
+        justify-content: start;
+    }
+    
+    .fala-pg4{
+        font-size: 25px;
+        padding-top: 20%;
+        padding: 50px 5%;
+        margin: 0;
+        color: #696969;
+    }
+    
+    .img-pg4{
+        display: flex;
+        flex-direction: row;
+        max-width: 50%; 
+        
+    }
+    
+    .img-especifica-pg4{
+        max-width: 100%;
+        max-height: 400px;
+    }
+}
+
+/*fim pagina 4*/

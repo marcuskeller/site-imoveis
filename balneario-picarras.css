@@ -1,0 +1,92 @@
+body, ul, li{
+
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Arial;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área */
+}
+
+/*inicio barra de navegação*/
+.header{
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    font-size: 10px;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.menu li {
+    margin-left: 10px;
+    
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+/*fim barra de navegação*/
+
+.container-pai{
+    background: #f8e8ba;
+}
+
+.container-divs{
+    padding: 5%;
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente (opcional) */
+   
+
+}
+
+
+
+.titulo{
+    font-size: 40px;
+}
+
+.texto{
+    font-size: 20px;
+    text-align-last: left;
+    hyphens: auto;
+    padding: 30px 5%;
+    line-height: 1.5; /* Define o espaçamento entre linhas como 1.6 vezes o tamanho da fonte */
+}
+
+.linha{
+    border-bottom: 3px solid #696969;/* Linha preta */
+    padding-bottom: 5px;/* Espaçamento entre o texto e a linha */
+
+}
+
+.img{
+    display: inline-block;
+    height: 700px;
+    width: 90%;
+    padding-bottom: 5%;
+}

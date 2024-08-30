@@ -29,6 +29,11 @@ img{
     padding: 20px;
 }
 
+.logo{
+    font-size: 10px;
+    color: white;
+}
+
 .menu{
     display: flex;
     
@@ -42,7 +47,6 @@ img{
 .menu li a {
     display: block;
     padding: 10px;
-    background: tomato;
 }
 
 /*fim barra de navegação*/
@@ -88,6 +92,8 @@ img{
 .texto1-pg1{
     font-size: 35px;
     padding: 0px 10%;
+    text-align-last: left;
+    hyphens: auto;
 }
 
 
@@ -98,7 +104,8 @@ img{
     max-width: 90%; /* Limita a largura do texto a 90% do container */
     box-sizing: border-box; /* Garante que o padding seja incluído no cálculo da largura total */
     margin: 0 auto; /* Centraliza o texto horizontalmente */
-    text-align: center; /* Centraliza o texto */
+    text-align: justify;
+    text-align-last: left;
 }
 
 .img-pg1{
@@ -124,13 +131,13 @@ img{
 
 @media (max-width: 768px) {
     .container-pg1{
-        align-items: start;
+        align-items: center;
     }
 
     .container-textos-pg1{
         position: absolute;
         padding: 0px 50px; /*Espaço de 0px em baixo e em cima e um espaço de 20px a esquerda e a direita */
-        padding-top: 20%;
+        padding-top: 10%;
         flex-direction: column;
         text-align: center;
         color: white;
@@ -180,23 +187,30 @@ img{
     flex-direction: column;
     gap: 20px; /* Espaçamento entre os blocos */
     background:#eee0b8ec ;/*outra forma #F8F8FF*/
-    padding: 0px 50px;
 }
 
 .container-imobiliaria-pg2{
     display: flex;
     align-items: center;/* Alinha verticalmente os itens ao centro */
+    height: auto;
     gap: 20px;
+    padding-left: 20px;
+
 }
 
 .container-imobiliaria-pg2 .container-textos-pg2{
     flex: 1; /* Ocupa o espaço restante ao lado da imagem */
 }
 
-.img-pg2{
-    width: auto;
-    height: auto;
+.titulo-principal-pg2{
+    color: black;
+    background:#f7d579ec ;
+    text-align: center;
+    
+}
 
+.titulo-inicio-pg2{
+    font-size: 40px;
 }
 
 .titulo-corretoras-pg2{
@@ -204,9 +218,19 @@ img{
 
 }
 
+.texto-corretoras-pg2{
+    padding-bottom: 20px;
+}
+
 .linha-pg2{
     border-bottom: 3px solid #696969;/* Linha preta */
     padding-bottom: 5px;/* Espaçamento entre o texto e a linha */
+
+}
+
+.img-pg2{
+    width: 200px;
+    height: 200px;
 
 }
 
@@ -216,13 +240,14 @@ img{
         flex-direction: column;
         gap: 20px; /* Espaçamento entre os blocos */
         background:#eee0b8ec ;/*outra forma #F8F8FF*/
-        padding-left:10%;
+        
     }
     
     .container-imobiliaria-pg2{
         display: flex;
         align-items: center;/* Alinha verticalmente os itens ao centro */
         gap: 20px;
+        padding-left:10%;
     }
     
     .container-imobiliaria .container-textos-pg2{
@@ -245,6 +270,7 @@ img{
     .texto-corretoras-pg2{
         font-size: 15px;
         text-align-last: left;
+        hyphens: auto;
     }
     
     .linha-pg2{
@@ -270,6 +296,10 @@ img{
     margin: 0 auto;
     padding: 20px 50px;
     background: #e4e2d7;
+}
+
+.titulo-curiosidade-pg3{
+    font-size: 40px;
 }
 
 .texto-curiosidades-pg3{
@@ -348,7 +378,7 @@ img{
 }
 
 .titulo-pg4{
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     margin-top: 0 ;
     padding-top: 40px;

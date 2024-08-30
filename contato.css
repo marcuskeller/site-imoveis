@@ -1,0 +1,360 @@
+body, ul, li{
+
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Arial;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área */
+}
+
+/*inicio barra de navegação*/
+.header{
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    font-size: 10px;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.menu li {
+    margin-left: 10px;
+    
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+/*fim barra de navegação*/
+
+/*inicio meios de comunicacao*/
+
+.container-pai-contato{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: rgb(77, 76, 76);
+    
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5% 5% ;
+}
+
+.subtitulo{
+    padding-top: 5%;
+    font-size: 30px;
+    color: white;
+}
+
+.texto{
+    color: rgb(197, 197, 197);
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* inicio  whatsapp*/
+.whatsapp-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 25px;
+    max-height: 25px;
+    font-size: 35px; /* Tamanho do ícone */
+    padding: 20px; /* Espaçamento ao redor do ícone */
+    border-radius: 90%; /* Borda arredondada */
+    color: #25d366; /* Cor do ícone */
+    background-color: #f1f1f1; /* Cor de fundo do ícone */
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+    
+}
+
+.whatsapp-icon:hover {
+    background-color: #20b358; /* Cor de fundo ao passar o mouse */
+    color: #ffffff; /* Cor do ícone ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+/* fim  whatsapp*/
+
+
+/* inicio telefone */
+.call-btn {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente o conteúdo no centro */
+    align-items: center; /* Alinha verticalmente o conteúdo no centro */
+    max-width: 25px; /* Largura máxima */
+    max-height: 25px; /* Altura máxima */
+    font-size: 35px; /* Tamanho do ícone */
+    padding: 20px; /* Espaçamento ao redor do ícone */
+    padding-left: 30px;
+    border-radius: 50%; /* Borda arredondada para criar um círculo */
+    color: #007bff; /* Cor do ícone */
+    background-color: #f1f1f1; /* Cor de fundo do ícone */
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+}
+
+.call-btn:hover {
+    background-color: #007bff; /* Cor ao passar o mouse */
+    color: #ffffff; /* Cor do ícone ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.call-btn i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+/* fim telefone */
+
+/* inicio instagram*/
+.instagram-btn {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 25px; /* Largura do botão */
+    height: 25px; /* Altura do botão */
+    font-size: 35px; /* Tamanho do ícone */
+    padding: 20px;
+    border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+    color: #e1306c; /* Cor do ícone */
+    background-color: white; /* Cor de fundo do Instagram */
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.instagram-btn:hover {
+    color: white;
+    background-color: #e1306c; /* Cor ao passar o mouse */
+}
+/* fim instagram*/
+
+/*inicio facebook*/
+.facebook-btn {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    font-size: 30px; /* Tamanho do ícone */
+    padding: 10px;
+    border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+    color: #3b5998; /* Cor do ícone */
+    background-color:white ; /* Cor de fundo do Facebook */
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.facebook-btn:hover {
+    color: white;
+    background-color: #3b5998; /* Cor ao passar o mouse */
+}
+/*fim facebook*/
+
+/*inicio twitter*/
+.twitter-btn {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    font-size: 30px; /* Tamanho do ícone */
+    padding: 10px;
+    border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+    color: #1da1f2; /* Cor do ícone */
+    background-color: white; /* Cor de fundo do Twitter */
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.twitter-btn:hover {
+    color: white;
+    background-color: #0d95e8; /* Cor ao passar o mouse */
+}
+
+
+/*fim twitter*/
+
+/*inicio e-mail*/
+
+.email-btn {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    font-size: 30px; /* Tamanho do ícone */
+    padding: 10px;
+    border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+    color: #d44638; /* Cor do ícone */
+    background-color: white; /* Cor de fundo (cor típica de ícones de e-mail) */
+    transition: background-color 0.3s ease; /* Transição suave para efeitos */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.email-btn:hover {
+    color: white;
+    background-color: #b43427; /* Cor ao passar o mouse */
+}
+/*fim e-mail*/
+
+/*inicio localizacao*/
+
+.location-btn {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    font-size: 30px; /* Tamanho do ícone */
+    padding: 10px;
+    border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+    color: #4285f4; /* Cor do ícone */
+    background-color: white; /* Cor de fundo (típica para mapas) */
+    transition: background-color 0.3s ease; /* Transição suave para efeitos */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.location-btn:hover {
+    color: white;
+    background-color: #357ae8; /* Cor ao passar o mouse */
+}
+
+
+/*fim localizacao*/
+
+/* inicio media */
+
+@media (max-width: 768px){
+    .container-pai-contato{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        background: rgb(77, 76, 76);
+        
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5% 5% ;
+        padding-left: 150px;
+        
+    }
+    
+    .subtitulo{
+        padding-top: 5%;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .texto{
+        color: rgb(197, 197, 197);
+        margin: 0;
+        font-size: 15px;
+    }
+    
+    
+    /* inicio  whatsapp*/
+    .whatsapp-icon {
+        font-size: 30px; /* Tamanho do ícone */
+        border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+        padding: 15px;
+    }
+    
+    /* fim  whatsapp*/
+    
+    
+    /* inicio telefone */
+    .call-btn {
+        font-size: 24px; /* Tamanho do ícone */
+        border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+        padding: 10px;
+        padding-left: 20px;
+        
+    }
+    
+    /* fim telefone */
+    
+    /* inicio instagram*/
+    .instagram-btn {
+        font-size: 30px; /* Tamanho do ícone */
+        border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+        padding: 13px;
+    }
+  
+    /* fim instagram*/
+    
+    /*inicio facebook*/
+    .facebook-btn {
+        font-size: 24px; /* Tamanho do ícone */
+        border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+        padding: 0px;
+    }
+    
+    
+    /*fim facebook*/
+    
+    /*inicio twitter*/
+    .twitter-btn {
+        font-size: 30px; /* Tamanho do ícone */
+        border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+        padding: 0px;
+    }
+    /*fim twitter*/
+    
+    /*inicio e-mail*/
+
+    .email-btn {
+        font-size: 24px; /* Tamanho do ícone */
+        border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+        padding: 0px;
+    }
+    /*fim e-mail*/
+    
+    /*inicio localizacao*/
+    
+    .location-btn {
+        font-size: 24px; /* Tamanho do ícone */
+        border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+        padding: 0px;
+    }
+    
+
+}   
+
+/* fim media */
+
+/*fim meios de comunicacao*/
